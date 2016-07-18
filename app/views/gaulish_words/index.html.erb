@@ -1,0 +1,15 @@
+<% @words.each do |gwep| %>
+  <h2><%= gwep.word %></h2>
+  <small><%= gwep.origin %></small>
+  <h3><%= gwep.translation %></h3>
+<% end %>
+
+<br />
+
+<h1>Enter Word Details</h1><br />
+<%= simple_form_for @new_word do |f| %>
+  <%= f.input :word %><br />
+  <%= f.input :origin %><br />
+  <%= f.input :translation %><br />
+  <%= f.submit 'Add' %>
+<% end %>

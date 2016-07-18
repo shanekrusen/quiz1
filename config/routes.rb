@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'pages#index'
+  root 'gaulish_words#index'
+  
+  resources :gaulish_words
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
